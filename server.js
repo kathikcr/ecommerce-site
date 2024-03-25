@@ -45,7 +45,7 @@ app.use(
 // Create route for loading product data
 app.get("/", (request, response) => {
 
-  const query = "SELECT * FROM product LIMIT 10"; // Enclose the query in quotes
+  const query = "SELECT * FROM product LIMIT 12"; // Enclose the query in quotes
 
   // Execute Query
   connection.query(query, (error, result) => {

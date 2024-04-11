@@ -48,7 +48,7 @@ app.get("/", (req, res) => {
 
 // Create route for loading product data
 app.get("/products", (req, res) => {
-  const query = "SELECT * FROM product LIMIT 12"; // Enclose the query in quotes
+  const query = "SELECT * FROM product LIMIT 9"; // Enclose the query in quotes
 
   // Execute Query
   connection.query(query, (error, result) => {
@@ -91,7 +91,7 @@ app.post('/add_cart', (req, res) => {
     req.session.cart.push(cart_data);
   }
 
-  res.redirect("/");
+  res.redirect("/products");
 });
 
 // Create Route for Remove Item from Shopping Cart
@@ -104,7 +104,7 @@ app.get('/remove_item', (req, res) => {
     }
   }
 
-  res.redirect("/");
+  res.redirect("/products");
 });
 
 // Port info

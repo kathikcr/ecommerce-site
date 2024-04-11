@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Our Store</title>
+    <link href="https://getbootstrap.com/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+        
+        .row
+        {
+            display: flex;
+            justify-content: center;
+        }
+        .para
+        {
+            font-weight: 500;
+        }
+
+        body
+        {
+            background-color: chocolate;
+        }
+
+        .btn
+        {
+            border: 2px solid black;
+            border-radius: 5px;
+            background-color: burlywood;
+           
+            position: relative;
+            left: 47%;
+            top: 20px;
+        }
+
+        a{
+            text-decoration: none;
+            color: azure;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffd700" fill-opacity="1" d="M0,128L20,160C40,192,80,256,120,256C160,256,200,192,240,160C280,128,320,128,360,133.3C400,139,440,149,480,165.3C520,181,560,203,600,224C640,245,680,267,720,240C760,213,800,139,840,106.7C880,75,920,85,960,90.7C1000,96,1040,96,1080,85.3C1120,75,1160,53,1200,74.7C1240,96,1280,160,1320,186.7C1360,213,1400,203,1420,197.3L1440,192L1440,0L1420,0C1400,0,1360,0,1320,0C1280,0,1240,0,1200,0C1160,0,1120,0,1080,0C1040,0,1000,0,960,0C920,0,880,0,840,0C800,0,760,0,720,0C680,0,640,0,600,0C560,0,520,0,480,0C440,0,400,0,360,0C320,0,280,0,240,0C200,0,160,0,120,0C80,0,40,0,20,0L0,0Z"></path></svg><b>Welcome to Our Mobile Store</b></h1>
+
+        <!-- About Us Section -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header"><b>About Us</b></div>
+                    <div class="card-body">
+                        <p class="para">At Mobile stores , we're passionate about making mobile shopping convenient and enjoyable. We believe everyone deserves access to a wide variety of high-quality products, delivered straight to their doorstep.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more sections as needed -->
+        </div>
+
+        <!-- Featured Products Section -->
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header"><b>Featured Products</b></div>
+                    <div class="card-body">
+                        <ul>
+                            <li>iphone-5</li>
+                            <li>Samsung Galaxy</li>
+                            <li>Nokia</li>
+                            <li>Pixel </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Contact Us Section -->
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header"><b>Contact Us</b></div>
+                    <div class="card-body">
+                        <p>Email: mobilestore@gmail.com</p>
+                        <p>Phone: +12-9867345612</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- <button class="btn"><a href="/products">Go To Cart</a></button> -->
+<a href="/products" class="btn btn-primary">Go to Next Page</a>
+
+</body>
+</html>
